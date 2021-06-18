@@ -8,7 +8,6 @@ Con este ejercicio aprenderás a:
 
 - Crear una aplicación estática con Angular CLI.
 - Construir una aplicación Angular con un componente.
-- Construir una aplicación Angular con dos componentes anidados.
 - Construir una aplicación Angular usando iteradores anidados.
 
 ## Requisitos de entrega
