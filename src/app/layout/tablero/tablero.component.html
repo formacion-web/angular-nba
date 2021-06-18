@@ -1,0 +1,26 @@
+<button class="back" mat-button><a  routerLink="/home">back</a></button>
+
+<div class="container-table">
+  <div class="table-champion">
+    <ng-container *ngFor="let team of campeonatos">
+      <article>
+        <h2>{{team.year}}</h2>
+        <a href="{{team.championUrl}}" target="_blank">{{team.champion}}</a>
+        <figure class="box-logo">
+          <img src="{{team.image}}" alt="{{team.champion}}">
+        </figure>
+        <footer class="box-best">
+          <h3>Best players</h3>
+            <ul>
+            <ng-container *ngFor="let player of team.bestPlayers">
+                <li>
+                  {{player.name}} {{player.surname}}
+                </li>
+              </ng-container>
+            </ul>
+        </footer>
+      </article>
+    </ng-container>
+  </div>
+</div>
+
