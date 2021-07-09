@@ -1,0 +1,24 @@
+:host{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.champions-container{
+  
+    display: flex;
+    justify-content: space-evenly;
+    margin:100px 0px;
+}
+
+img{
+    display: block;
+    width: 108px;
+    height: 90px;
+}
+
+mat-card::ng-deep.mat-card-header-text {
+    width: 100%;
+  }

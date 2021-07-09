@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-champions-form',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./champions-form.component.scss']
 })
 export class ChampionsFormComponent implements OnInit {
+
+  @Input() NBA_Champions:any| undefined;
 
   constructor() { }
 
