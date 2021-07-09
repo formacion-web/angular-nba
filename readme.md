@@ -1,34 +1,27 @@
-# Angular NBA
+# AngularNba
 
-![](https://imgur.com/lsvhmxr.png)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
-## Objetivos
+## Development server
 
-Con este ejercicio aprenderás a: 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-- Construir una aplicación Angular usando iteradores anidados.
+## Code scaffolding
 
-## Requisitos de entrega
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Pasar la url del ejercicio por slack.
+## Build
 
-## Introducción
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Crea un tablero con los últimos ganadores de la NBA. 
+## Running unit tests
 
-## Instrucciones
-Crea una aplicación angular con el nombre 'angular-nba' para mostrar un tablero con los últimos ganadores de la NBA. En este caso se necesita crear un componente que contendrá un array de campeonatos con los siguientes campos:
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-- año (campo `year`) del campeonato.
-- Nombre del equipo campeón (`champion`).
-- Una url (`champion-url`) que muestre la información del equipo.
-- Una lista con los mejores jugadores del equipo campeón, llamada:  `best-players`
+## Running end-to-end tests
 
-Toda la información se encuentra en [NBA Champions](https://en.wikipedia.org/wiki/List_of_NBA_champions) de wikipedia. En la aplicación se deben mostrar al menos 3. La aplicación debería parecerse a esto:
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-![](https://imgur.com/upGDj19.png)
+## Further help
 
-<!-- :::info -->
-**Nota** 
-Se requiere iterar sobre dos colecciones diferentes para mostrar toda la información: `Championships` y `best-players` de cada equipo.
-<!-- ::: -->
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
