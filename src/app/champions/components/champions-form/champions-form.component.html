@@ -1,22 +1,19 @@
-<div class="champions-container">
-
-    <mat-card *ngFor="let item of NBA_Champions">
-        <mat-card-header>
-            <mat-card-title>{{item.year}}</mat-card-title>
-            <mat-card-subtitle>{{item.champion}}</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-divider></mat-divider>
-
-        <picture>
-            <a href={{item.champion_url}} target="_blank"><img mat-card-image src={{item.logo}} alt="logo"></a>
-        </picture>
-
-        <mat-card-subtitle>Best Players</mat-card-subtitle>
-        <mat-card-content *ngFor="let player of item.best_players">
-            {{player}}
-        </mat-card-content>
-
-
-    </mat-card>
+<div class="champion-container">
+    <div class="main-container" *ngFor="let item of NBA_Champions">
+        <div class="logo-container">
+            <a href={{item.champion_url}} target="_blank"><img src={{item.logo}} class="logo" /></a>
+        </div>
+        <div class="ticket-container">
+            <div class="ticket__content">
+                <h1 class="ticket__champion-year">{{item.year}}</h1>
+                <h2 class="ticket__champion-name">
+                    {{item.champion}}.
+                </h2><hr>
+                <p class="ticket__best-players">Best Players</p>
+                <p class="ticket__players-name" *ngFor="let player of item.best_players">
+                    {{player}}.
+            </div>
+        </div>
+    </div>
+ 
 </div>
