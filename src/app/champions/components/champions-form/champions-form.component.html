@@ -3,14 +3,14 @@
         <div class="logo-container">
             <a href={{item.champion_url}} target="_blank"><img src={{item.logo}} class="logo" /></a>
         </div>
-        <div class="ticket-container">
-            <div class="ticket__content">
-                <h1 class="ticket__champion-year">{{item.year}}</h1>
-                <h2 class="ticket__champion-name">
+        <div class="card-container">
+            <div class="card__content">
+                <h1 class="card__champion-year">{{item.year}}</h1>
+                <h2 class="card__champion-name">
                     {{item.champion}}.
                 </h2><hr>
-                <p class="ticket__best-players">Best Players</p>
-                <p class="ticket__players-name" *ngFor="let player of item.best_players">
+                <p class="card__best-players">Best Players</p>
+                <p class="card__players-name" *ngFor="let player of item.best_players">
                     {{player}}.
             </div>
         </div>

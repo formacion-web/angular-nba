@@ -43,7 +43,7 @@ body {
 	box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
 }
 
-.ticket-container {
+.card-container {
 	background: #fff;
 	width: 270px;
 	height: 520px;
@@ -57,7 +57,7 @@ body {
 	opacity: 0;
 }
 
-.main-container:hover .ticket-container {
+.main-container:hover .card-container {
 	opacity: 1;
 	animation: bounceIn 0.6s linear;
 }
@@ -101,31 +101,31 @@ body {
 	}
 }
 
-.ticket__content {
+.card__content {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
 }
 
-.ticket__champion-year {
+.card__champion-year {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
-.ticket__champion-name {
+.card__champion-name {
 	color: #999;
 	margin-bottom: 5px;
 }
 
-.ticket__best-players {
+.card__best-players {
 	color: #69c982;
 	font-size: 1.2rem;
 	font-weight: bold;
     margin-top: 10px;
 }
 
-.ticket__players-name {
+.card__players-name {
 	color: #999;
 	margin-bottom: 10px;
 }
