@@ -1,0 +1,19 @@
+<p>home works!</p>
+
+<div>
+    <mat-card *ngFor="let equipo of champions" color="primary">
+        <mat-card-title>
+            {{equipo.ano}}
+        </mat-card-title>
+        <mat-card-subtitle>
+            {{equipo.nombre}}
+        </mat-card-subtitle>
+        <img mat-card-image src={{equipo.url_image}}> 
+
+        <p>Best Players</p>
+
+        <ul>
+            <li *ngFor="let p of equipo.jugadores">{{p}}</li>
+        </ul>
+    </mat-card>
+</div>
